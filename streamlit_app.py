@@ -88,7 +88,8 @@ if streamlit.button('Get Fruit Load List'):
     my_data_rows = get_fruit_load_list()
     streamlit.dataframe(my_data_rows)
 
-
+    
+streamlit.stop();
 
 #New Section to display fruityvice api response
 fruit_added = streamlit.text_input('What fruit would you like to add?','jackfruit')
